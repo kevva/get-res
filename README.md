@@ -6,6 +6,17 @@ Get ten most popular screen resolutions.
 
 Install with [npm](https://npmjs.org/package/getres): `npm install getres`
 
+## Example
+
+```js
+var getres = require(getres);
+
+getres(function (err, data) {
+    console.log(data);
+    // => ['1366x768','1024x768','1280x800','1920x1080','1440x900','768x1024', '1280x1024','1600x900','320x480','320x568']
+})
+```
+
 ## API
 
 ### getres(cb)
