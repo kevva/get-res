@@ -1,4 +1,4 @@
-# getres [![Build Status](https://secure.travis-ci.org/kevva/getres.png?branch=master)](http://travis-ci.org/kevva/getres)
+# getres [![Build Status](https://travis-ci.org/kevva/getres.png?branch=master)](http://travis-ci.org/kevva/getres)
 
 Get ten most popular screen resolutions.
 
