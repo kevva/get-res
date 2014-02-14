@@ -1,10 +1,16 @@
 # getres [![Build Status](https://secure.travis-ci.org/kevva/getres.png?branch=master)](http://travis-ci.org/kevva/getres)
 
-A description.
+Get ten most popular screen resolutions.
 
 ## Getting started
 
 Install with [npm](https://npmjs.org/package/getres): `npm install getres`
+
+## API
+
+### getres(cb)
+
+Returns an array with the ten most popular resolutions from [w3counter.com](http://www.w3counter.com/globalstats.php).
 
 ## License
 
