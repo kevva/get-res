@@ -16,7 +16,7 @@ module.exports = function (cb) {
 
     http.get('http://www.w3counter.com/globalstats.php', function (res) {
         if (res.statusCode !== 200) {
-            cb('Error code ' + res.statusCode);
+            cb(res.statusCode);
         }
 
         res.on('data', function (data) {
