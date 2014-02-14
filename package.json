@@ -1,0 +1,35 @@
+{
+  "name": "getres",
+  "version": "0.1.0",
+  "description": "Get ten most popular screen resolutions",
+  "keywords": [
+    "resolution",
+    "screen",
+    "size"
+  ],
+  "homepage": "https://github.com/kevva/getres",
+  "bugs": "https://github.com/kevva/getres/issues",
+  "author": {
+    "name": "Kevin Mårtensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "https://github.com/kevva"
+  },
+  "license": "MIT",
+  "repository": "git://github.com/kevva/getres.git",
+  "scripts": {
+    "test": "mocha --reporter list --timeout 0"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "cheerio": "~0.13.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
