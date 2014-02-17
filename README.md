@@ -9,7 +9,7 @@ Install with [npm](https://npmjs.org/package/getres): `npm install getres`
 ## Example
 
 ```js
-var getres = require(getres);
+var getres = require('getres');
 
 getres(function (err, data) {
     console.log(data);
