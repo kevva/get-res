@@ -16,7 +16,7 @@ module.exports = function (cb) {
 
     http.get('http://www.w3counter.com/globalstats.php', function (res) {
         if (res.statusCode !== 200) {
-            cb(res.statusCode);
+            return cb(res.statusCode);
         }
 
         res.on('data', function (data) {
@@ -32,9 +32,13 @@ module.exports = function (cb) {
                 ret.push(this.text());
             });
 
+            if (ret.length === 0) {
+                return cb('Couldn\'t get any screen resolutions');
+            }
+
             cb(null, ret);
         });
     }).on('error', function (err) {
-        cb(err);
+        return cb(err);
     });
 };
