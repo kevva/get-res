@@ -2,11 +2,11 @@
 'use strict';
 
 var assert = require('assert');
-var getres = require('./');
+var getRes = require('./');
 
-describe('getres()', function () {
+describe('getRes()', function () {
     it('should fetch 10 items', function (cb) {
-        getres(function (err, data) {
+        getRes(function (err, data) {
             assert.strictEqual(data.length, 10);
 
             data.forEach(function (el) {

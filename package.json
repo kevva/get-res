@@ -1,5 +1,5 @@
 {
-  "name": "getres",
+  "name": "get-res",
   "version": "0.1.2",
   "description": "Get ten most popular screen resolutions",
   "keywords": [
@@ -7,15 +7,15 @@
     "screen",
     "size"
   ],
-  "homepage": "https://github.com/kevva/getres",
-  "bugs": "https://github.com/kevva/getres/issues",
+  "homepage": "https://github.com/kevva/get-res",
+  "bugs": "https://github.com/kevva/get-res/issues",
   "author": {
     "name": "Kevin Mårtensson",
     "email": "kevinmartensson@gmail.com",
     "url": "https://github.com/kevva"
   },
   "license": "MIT",
-  "repository": "git://github.com/kevva/getres.git",
+  "repository": "git://github.com/kevva/get-res.git",
   "scripts": {
     "test": "mocha --reporter list --timeout 0"
   },
