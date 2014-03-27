@@ -1,7 +1,6 @@
 'use strict';
 
-var cheerio = require('cheerio');
-var http = require('http');
+var w3counter = require('w3counter');
 
 /**
  * Get ten most popular screen resolutions
@@ -11,34 +10,11 @@ var http = require('http');
  */
 
 module.exports = function (cb) {
-    var chunk = '';
-    var ret = [];
-
-    http.get('http://www.w3counter.com/globalstats.php', function (res) {
-        if (res.statusCode !== 200) {
-            return cb(res.statusCode);
+    w3counter('res', function (err, data) {
+        if (err) {
+            return cb(err);
         }
 
-        res.on('data', function (data) {
-            chunk += data;
-        });
-
-        res.on('end', function () {
-            var $ = cheerio.load(chunk);
-
-            $('th').filter(function () {
-                return this.text() === 'Screen Resolutions';
-            }).parent().nextAll('.item').each(function () {
-                ret.push(this.text());
-            });
-
-            if (ret.length === 0) {
-                return cb('Couldn\'t get any screen resolutions');
-            }
-
-            cb(null, ret);
-        });
-    }).on('error', function (err) {
-        return cb(err);
+        return cb(null, data);
     });
 };
