@@ -1,12 +1,14 @@
 # get-res [![Build Status](https://travis-ci.org/kevva/get-res.png?branch=master)](http://travis-ci.org/kevva/get-res)
 
-Get ten most popular screen resolutions.
+> Get ten most popular screen resolutions.
 
-## Getting started
+## Install
 
-Install with [npm](https://npmjs.org/package/get-res): `npm install get-res`
+```bash
+$ npm install --save get-res
+```
 
-## Example
+## Usage
 
 ```js
 var getRes = require('get-res');
@@ -17,12 +19,6 @@ getRes(function (err, data) {
 })
 ```
 
-## API
-
-### getRes(cb)
-
-Returns an array with the ten most popular resolutions from [w3counter.com](http://www.w3counter.com/globalstats.php).
-
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License) (c) [Kevin Mårtensson](https://github.com/kevva)
+[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)
