@@ -19,6 +19,23 @@ getRes(function (err, data) {
 })
 ```
 
+## CLI
+
+You can also use it as a CLI app by installing it globally:
+
+```bash
+$ npm install --global get-res
+```
+
+### Usage
+
+```bash
+$ get-res --help
+
+Usage
+  $ get-res
+```
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)
