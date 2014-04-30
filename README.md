@@ -1,6 +1,6 @@
 # get-res [![Build Status](https://travis-ci.org/kevva/get-res.svg?branch=master)](https://travis-ci.org/kevva/get-res)
 
-> Get ten most popular screen resolutions.
+> Get ten most popular screen resolutions
 
 ## Install
 
@@ -21,13 +21,9 @@ getRes(function (err, data) {
 
 ## CLI
 
-You can also use it as a CLI app by installing it globally:
-
 ```bash
 $ npm install --global get-res
 ```
-
-### Usage
 
 ```bash
 $ get-res --help
@@ -38,4 +34,4 @@ Usage
 
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)
+MIT © [Kevin Mårtensson](https://github.com/kevva)
