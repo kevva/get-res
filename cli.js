@@ -44,6 +44,6 @@ getRes(function (err, resolutions) {
 
     resolutions.forEach(function (res, i) {
         i = i + 1;
-        console.log(i + '. ' + res);
+        console.log(i + '. ' + res.item);
     });
 });
