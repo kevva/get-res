@@ -10,7 +10,7 @@ describe('getRes()', function () {
             assert.strictEqual(data.length, 10);
 
             data.forEach(function (el) {
-                assert(/^\d{3,4}x\d{3,4}$/i.test(el));
+                assert(/^\d{3,4}x\d{3,4}$/i.test(el.item));
             });
 
             cb();
