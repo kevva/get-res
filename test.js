@@ -1,19 +1,16 @@
-/*global describe, it */
 'use strict';
 
-var assert = require('assert');
 var getRes = require('./');
+var test = require('ava');
 
-describe('getRes()', function () {
-    it('should fetch 10 items', function (cb) {
-        getRes(function (err, data) {
-            assert.strictEqual(data.length, 10);
+test('fetch 10 items', function (t) {
+    t.plan(11);
 
-            data.forEach(function (el) {
-                assert(/^\d{3,4}x\d{3,4}$/i.test(el.item));
-            });
+    getRes(function (err, data) {
+        t.assert(!err);
 
-            cb();
+        data.forEach(function (el) {
+            t.assert(/^\d{3,4}x\d{3,4}$/i.test(el.item));
         });
     });
 });
