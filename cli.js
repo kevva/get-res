@@ -39,7 +39,8 @@ if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -
 
 getRes(function (err, resolutions) {
     if (err) {
-        throw err;
+        console.error(err);
+        process.exit(1);
     }
 
     resolutions.forEach(function (res, i) {
