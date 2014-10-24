@@ -14,8 +14,8 @@ $ npm install --save get-res
 var getRes = require('get-res');
 
 getRes(function (err, data) {
-    console.log(data);
-    // => [ { item: '1366x768', percent: '20.34%' }, { item: '1280x800', percent: '9.23%' }, ... ]
+	console.log(data);
+	// => [ { item: '1366x768', percent: '20.34%' }, { item: '1280x800', percent: '9.23%' }, ... ]
 })
 ```
 

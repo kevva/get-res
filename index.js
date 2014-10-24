@@ -10,11 +10,11 @@ var w3counter = require('w3counter');
  */
 
 module.exports = function (cb) {
-    w3counter('res', function (err, data) {
-        if (err) {
-            return cb(err);
-        }
+	w3counter('res', function (err, data) {
+		if (err) {
+			return cb(err);
+		}
 
-        return cb(null, data);
-    });
+		return cb(null, data);
+	});
 };
