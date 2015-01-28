@@ -4,20 +4,12 @@
 var getRes = require('./');
 var meow = require('meow');
 
-/**
- * Initialize CLI
- */
-
 meow({
 	help: [
 		'Usage',
-		'  get-res'
+		'  $ get-res'
 	].join('\n')
 });
-
-/**
- * Run
- */
 
 getRes(function (err, res) {
 	if (err) {
