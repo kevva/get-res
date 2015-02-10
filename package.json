@@ -28,8 +28,8 @@
     "size"
   ],
   "dependencies": {
-    "meow": "^2.0.0",
-    "w3counter": "^0.2.0"
+    "meow": "^3.0.0",
+    "w3counter": "^1.0.3"
   },
   "devDependencies": {
     "ava": "^0.0.4"
