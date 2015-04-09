@@ -19,6 +19,6 @@ getRes(function (err, res) {
 
 	res.forEach(function (r, i) {
 		i = i + 1;
-		console.log(i + '. ' + r.item);
+		console.log(i + '. ' + r.item + ' (' + r.percent + ')');
 	});
 });
