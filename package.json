@@ -1,6 +1,6 @@
 {
   "name": "get-res",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get ten most popular screen resolutions",
   "license": "MIT",
   "repository": "kevva/get-res",
