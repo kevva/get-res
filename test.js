@@ -1,7 +1,7 @@
 'use strict';
 
-var getRes = require('./');
 var test = require('ava');
+var getRes = require('./');
 
 test('fetch 10 items', function (t) {
 	getRes(function (err, data) {

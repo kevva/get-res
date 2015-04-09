@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
 
-var getRes = require('./');
 var meow = require('meow');
+var getRes = require('./');
 
 meow({
 	help: [
@@ -13,7 +13,7 @@ meow({
 
 getRes(function (err, res) {
 	if (err) {
-		console.error(err);
+		console.error(err.message);
 		process.exit(1);
 	}
 

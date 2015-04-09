@@ -2,11 +2,13 @@
 
 > Get ten most popular screen resolutions
 
+
 ## Install
 
-```bash
+```
 $ npm install --save get-res
 ```
+
 
 ## Usage
 
@@ -19,18 +21,37 @@ getRes(function (err, data) {
 })
 ```
 
+
+## API
+
+### getRes(callback)
+
+Gets ten most popular screen resolutions from [w3counter](http://www.w3counter.com/globalstats.php).
+
+#### callback(err, data)
+
+Type: `function`
+
+##### data
+
+Type: `array`
+
+An array of objects containing the ten most popular resolutions.
+
+
 ## CLI
 
-```bash
+```
 $ npm install --global get-res
 ```
 
-```bash
+```
 $ get-res --help
 
-Usage
-  $ get-res
+  Usage
+    $ get-res
 ```
+
 
 ## License
 
