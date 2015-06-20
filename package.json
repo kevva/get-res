@@ -28,7 +28,7 @@
     "size"
   ],
   "dependencies": {
-    "meow": "^3.0.0",
+    "meow": "^3.3.0",
     "w3counter": "^1.0.3"
   },
   "devDependencies": {

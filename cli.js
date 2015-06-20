@@ -8,7 +8,7 @@ meow({
 	help: [
 		'Usage',
 		'  $ get-res'
-	].join('\n')
+	]
 });
 
 getRes(function (err, res) {
