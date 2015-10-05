@@ -1,13 +1,12 @@
-'use strict';
-var test = require('ava');
-var getRes = require('./');
+import test from 'ava';
+import getRes from './';
 
-test('fetch 10 items', function (t) {
+test('fetch 10 items', async t => {
 	t.plan(10);
 
-	getRes().then(function (data) {
-		data.forEach(function (el) {
-			t.assert(/^\d{3,4}x\d{3,4}$/i.test(el.item));
-		});
+	const data = await getRes();
+
+	data.forEach(el => {
+		t.regexTest(/^\d{3,4}x\d{3,4}$/i, el.item);
 	});
 });
