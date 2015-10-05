@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "meow": "^3.3.0",
-    "w3counter": "^1.0.3"
+    "w3counter": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.0.4"

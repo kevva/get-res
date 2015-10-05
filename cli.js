@@ -10,14 +10,9 @@ meow({
 	]
 });
 
-getRes(function (err, res) {
-	if (err) {
-		console.error(err.message);
-		process.exit(1);
-	}
-
+getRes().then(function (res) {
 	res.forEach(function (r, i) {
-		i = i + 1;
+		i++;
 		console.log(i + '. ' + r.item + ' (' + r.percent + ')');
 	});
 });
