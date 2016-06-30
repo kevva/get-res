@@ -32,7 +32,7 @@ Gets ten most popular screen resolutions from [w3counter](http://www.w3counter.c
 ## CLI
 
 ```
-$ npm install --global get-res
+$ npm install -g get-res
 ```
 
 ```

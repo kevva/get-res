@@ -1,18 +1,17 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var getRes = require('./');
+const meow = require('meow');
+const getRes = require('./');
 
-meow({
-	help: [
-		'Usage',
-		'  $ get-res'
-	]
-});
+meow(`
+	Usage
+	  $ get-res
+`);
 
-getRes().then(function (res) {
-	res.forEach(function (r, i) {
-		i++;
-		console.log(i + '. ' + r.item + ' (' + r.percent + ')');
-	});
+getRes().then(res => {
+	let i = 1;
+
+	for (const r of res) {
+		console.log(`${i++}. ${r.item} (${r.percent})`);
+	}
 });
