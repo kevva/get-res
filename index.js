@@ -1,6 +1,4 @@
 'use strict';
-var w3counter = require('w3counter');
+const w3counter = require('w3counter');
 
-module.exports = function () {
-	return w3counter('res');
-};
+module.exports = () => w3counter('res');

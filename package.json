@@ -10,7 +10,7 @@
     "url": "https://github.com/kevva"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "bin": {
     "get-res": "cli.js"
@@ -29,15 +29,13 @@
   ],
   "dependencies": {
     "meow": "^3.3.0",
-    "w3counter": "^2.0.0"
+    "w3counter": "^3.0.1"
   },
   "devDependencies": {
-    "ava": "^0.2.0",
+    "ava": "*",
     "xo": "*"
   },
   "xo": {
-    "ignore": [
-      "test.js"
-    ]
+    "esnext": true
   }
 }
